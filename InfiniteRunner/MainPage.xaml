@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfiniteRunner.MainPage"
+             xmlns:ff="clr-namespace:FFImageLoading.Maui;assembly=FFImageLoading.Maui"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#FF3058B7">
+  <Grid>
+    <Grid.GestureRecognizers>
+      <TapGestureRecognizer Tapped="OnGridTapped"/>
+    </Grid.GestureRecognizers>
+    <HorizontalStackLayout x:Name="horizontalStackLayer1"
+                           VerticalOptions="Fill">
+      <Image Source="bg_layer_1.png"
+             Aspect="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_1.png"
+             Aspect="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_1.png"
+             Aspect="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_1.png"
+             Aspect="Fill"
+             VerticalOptions="Fill"/>
+    </HorizontalStackLayout>
+    <HorizontalStackLayout x:Name="horizontalStackLayer2"
+                           VerticalOptions="Fill">
+      <Image Source="bg_layer_2.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_2.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_2.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image Source="bg_layer_2.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+    </HorizontalStackLayout>   
+    <HorizontalStackLayout x:Name="horizontalStackLayer3"
+                           VerticalOptions="Fill">
+      <Image Source="bg_layer_3.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image WidthRequest="700"
+             Source="bg_layer_3.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image WidthRequest="700"
+             Source="bg_layer_3.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+      <Image WidthRequest="700"
+             Source="bg_layer_3.png"
+             Aspect="Fill"
+             HorizontalOptions="Fill"
+             VerticalOptions="Fill"/>
+    </HorizontalStackLayout>     
+
+
+    <HorizontalStackLayout x:Name="horizontalStackChao"
+                           Margin="0,0,0,0"
+                           HeightRequest="250"
+                           VerticalOptions="End">
+      <Image Source="floor01"
+             Aspect="AspectFill"
+             HorizontalOptions="Fill"/>       
+      <Image Source="floor01"
+             Aspect="AspectFill"
+             HorizontalOptions="Fill"/>
+      <Image Source="floor01"
+             Aspect="AspectFill"
+             HorizontalOptions="Fill"/>
+      <Image Source="floor01"
+             Aspect="AspectFill"
+             HorizontalOptions="Fill"/>
+    </HorizontalStackLayout>
+    <Image x:Name="imgPlayer"
+           Source="player01.png"
+           HeightRequest="150"
+           Margin="100,0,0,250"
+           HorizontalOptions="Start"
+           VerticalOptions="End"/>
+    <Image x:Name="imgEnemy01"
+           Source="rock.png"
+           Aspect="Fill"
+           HeightRequest="100"
+           WidthRequest="200"
+           Margin="0,0,0,220"
+           HorizontalOptions="End"
+           VerticalOptions="End"/>
+    <Image x:Name="imgEnemy02"
+          Source="capibara.png"
+           Aspect="Fill"
+           HeightRequest="150"
+           WidthRequest="200"
+           Margin="0,0,0,230"
+           HorizontalOptions="End"
+           VerticalOptions="End"/>
+    <Image x:Name="imgEnemy03"
+           Source="tomeli.png"
+           Aspect="Fill"
+           HeightRequest="150"
+           WidthRequest="130"
+           Margin="0,0,0,230"
+           HorizontalOptions="End"
+           VerticalOptions="End"/>
+    <Image x:Name="imgEnemy04"
+           Source="boleto.png"
+           Aspect="Fill"
+           HeightRequest="200"
+           WidthRequest="100"
+           Margin="0,0,0,230"
+           HorizontalOptions="End"
+           VerticalOptions="End"/>
+  </Grid>
+</ContentPage>
